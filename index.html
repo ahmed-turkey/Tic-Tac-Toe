@@ -61,23 +61,23 @@
         <button class="btn">Start New Game</button>
       </section>
       <section id="active-game">
-        <article>
-          <h3>You Won! <span id="winner-name">winner name</span></h3>
+        <article id="game-over" >
+          <h2>You Won! <span id="winner-name">winner name</span></h2>
           <p>Click "Start New Game"</p>
         </article>
         <p>It's your turn <span id="active-player-name">player name</span>!</p>
-        <ol>
-          <li></li>
-          <li></li>
-          <li></li>
+        <ol id="game-board">
+          <li class="disabled">x</li>
+          <li class="disabled">o</li>
+          <li class="disabled">x</li>
 
-          <li></li>
-          <li></li>
-          <li></li>
+          <li ></li>
+          <li class="disabled">o</li>
+          <li ></li>
 
-          <li></li>
-          <li></li>
-          <li></li>
+          <li ></li>
+          <li class="disabled">o</li>
+          <li ></li>
         </ol>
       </section>
     </main>
