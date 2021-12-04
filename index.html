@@ -11,24 +11,26 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <header>
+    <header id="main-header">
       <h1>Play Tic, Tac, Toe</h1>
       <p>Built with HTmL, css, JavaScript and -of course - lots of love!</p>
     </header>
     <main>
       <aside>
-        <h2>Choose your name</h2>
+        <header>
+          <h2>Choose your name</h2>
+        </header>
         <form>
           <div>
             <label for="player-name">Player name</label>
             <input id="player-name" type="text" name="playerName" />
           </div>
           <div>
-            <button type="button">Cancel</button>
-            <button type="submit">Confirm</button>
+            <button type="button" class="btn btn-alt">Cancel</button>
+            <button type="submit" class="btn">Confirm</button>
           </div>
         </form>
       </aside>
@@ -39,7 +41,7 @@
               <h2>Player 1</h2>
               <h3>Player Name</h3>
               <p>x</p>
-              <button>edit</button>
+              <button class="btn btn-alt">edit</button>
             </article>
           </li>
           <li>
@@ -47,11 +49,11 @@
               <h2>Player 2</h2>
               <h3>Player Name</h3>
               <p>O</p>
-              <button>edit</button>
+              <button class="btn btn-alt">edit</button>
             </article>
           </li>
         </ol>
-        <button>Start New Game</button>
+        <button class="btn">Start New Game</button>
       </section>
       <section id="active-game">
         <article>
