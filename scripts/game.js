@@ -17,10 +17,15 @@ function switchPlayer() {
 
 function selectGameField(event) {
     const selectField = event.target;
+    const selectedColumn = selectField.dataset.col - 1;
+    const selectedRow = selectField.dataset.row - 1; 
+if (gameData[selectedRow][selectedColumn] > 0 ){
+    alert('please select an embty field')
+    return;
+}
+
     selectField .textContent = players[activePlayer].symbol;
     selectField .classList.add('disabled');
-const selectedColumn = selectField.dataset.col - 1;
-const selectedRow = selectField.dataset.row - 1;
 gameData[selectedRow][selectedColumn] = activePlayer + 1;
 console.log(gameData);
 switchPlayer();
