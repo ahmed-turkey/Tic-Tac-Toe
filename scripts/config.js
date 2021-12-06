@@ -27,3 +27,4 @@ function savePlayerConfig(event) {
   players[editedPlayer - 1].name = enteredPlayerName;
   closePlayerConfig();
 }
+

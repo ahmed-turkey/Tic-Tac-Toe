@@ -1,7 +1,7 @@
 const gameData = [
 [0,0,0],
 [0,0,0],
-[0,0,0],
+[0,0,0]
 
 ];
 
@@ -19,11 +19,12 @@ const players = [
     }
  ];
 const playerElementOverLayElement = document.getElementById('config-overlay');
-const backdropElement = document.getElementById('backdrop')
+const backdropElement = document.getElementById('backdrop');
 const formElement = document.querySelector('form');
 const errorsOutputElement = document.getElementById('config-error');
-const gameAreaElement = document.getElementById('active-game')
+const gameAreaElement = document.getElementById('active-game');
 const activePlayerNameElement = document.getElementById('active-player-name');
+const gameOverElement = document.getElementById('game-over');
 
 const editPlayer1ButtonElement = document.getElementById('edit-player-1-btn');
 const editPlayer2ButtonElement = document.getElementById('edit-player-2-btn');
