@@ -8,6 +8,7 @@ const gameData = [
 let editedPlayer = 0;
 let activePlayer = 0;
 let currentround = 1;
+let gameIsOvered = false;
 const players = [
     {
         name:'',

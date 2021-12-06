@@ -1,6 +1,7 @@
 function resetGameStatus (){
     activePlayer = 0;
     currentround = 1;
+    gameIsOvered = false;
     gameOverElement.firstElementChild.innerHTML = 'You Won! <span id="winner-name">winner name</span>'
     gameOverElement.style.display = 'none';
     let gameFieldIndex = 0;
@@ -35,6 +36,9 @@ function switchPlayer() {
 }
 
 function selectGameField(event) {
+if ( gameIsOvered === true){
+return;
+}
   const selectField = event.target;
   const selectedColumn = selectField.dataset.col - 1;
   const selectedRow = selectField.dataset.row - 1;
@@ -95,6 +99,7 @@ function checkforGameOver() {
   return 0;
 }
 function endGame(winnerId) {
+    gameIsOvered = true;
   gameOverElement.style.display = "block";
   if (winnerId > 0) {
     const winnerName = players[winnerId - 1].name;
